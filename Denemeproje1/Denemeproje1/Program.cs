@@ -10,6 +10,8 @@ namespace Denemeproje1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("merhaba dunya");
+            Console.ReadKey();
         }
     }
 }
