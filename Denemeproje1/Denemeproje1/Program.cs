@@ -11,6 +11,8 @@ namespace Denemeproje1
         static void Main(string[] args)
         {
             Console.WriteLine("merhaba dunya");
+            Console.WriteLine("Bu oguzhanın branch ı");
+            
             Console.ReadKey();
         }
     }
