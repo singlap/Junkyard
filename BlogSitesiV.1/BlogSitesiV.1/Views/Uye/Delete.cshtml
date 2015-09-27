@@ -1,0 +1,64 @@
+﻿@model BlogSitesiV._1.Data.Model.Uye
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Uye</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.uyeAd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.uyeAd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.uyeSoyad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.uyeSoyad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.uyeEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.uyeEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.uyeKullanici)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.uyeKullanici)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.uyeSifre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.uyeSifre)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

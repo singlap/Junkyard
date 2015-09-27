@@ -1,0 +1,80 @@
+﻿@model BlogSitesiV._1.Data.Model.Makale
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Makale</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.kategori.kategoriAd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kategori.kategoriAd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.makaleBaslik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.makaleBaslik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.makaleOzet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.makaleOzet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.makaleIcerik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.makaleIcerik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.makaleResim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.makaleResim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.makaleOkunma)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.makaleOkunma)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.makaleYorumSayisi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.makaleYorumSayisi)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

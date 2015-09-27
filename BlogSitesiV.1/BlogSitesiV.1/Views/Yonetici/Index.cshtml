@@ -1,0 +1,51 @@
+﻿@model IEnumerable<BlogSitesiV._1.Data.Model.Yonetici>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.yoneticiAd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.yoneticiSoyad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.yoneticiKullanici)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.yoneticiSifre)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.yoneticiAd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.yoneticiSoyad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.yoneticiKullanici)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.yoneticiSifre)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.yoneticiID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.yoneticiID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.yoneticiID })
+        </td>
+    </tr>
+}
+
+</table>

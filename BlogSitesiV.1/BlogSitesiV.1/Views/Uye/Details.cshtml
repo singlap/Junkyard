@@ -1,0 +1,58 @@
+﻿@model BlogSitesiV._1.Data.Model.Uye
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Uye</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.uyeAd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.uyeAd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.uyeSoyad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.uyeSoyad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.uyeEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.uyeEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.uyeKullanici)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.uyeKullanici)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.uyeSifre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.uyeSifre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.uyeID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

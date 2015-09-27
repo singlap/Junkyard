@@ -1,0 +1,58 @@
+﻿@model BlogSitesiV._1.Data.Model.Yorum
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Yorum</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.makale.makaleBaslik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.makale.makaleBaslik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.uye.uyeAd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.uye.uyeAd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.yorumTarih)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.yorumTarih)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YorumOnay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YorumOnay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.yorumResim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.yorumResim)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.yorumID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

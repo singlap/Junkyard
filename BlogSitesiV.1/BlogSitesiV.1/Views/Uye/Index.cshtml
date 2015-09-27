@@ -1,0 +1,57 @@
+﻿@model IEnumerable<BlogSitesiV._1.Data.Model.Uye>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.uyeAd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.uyeSoyad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.uyeEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.uyeKullanici)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.uyeSifre)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.uyeAd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.uyeSoyad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.uyeEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.uyeKullanici)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.uyeSifre)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.uyeID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.uyeID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.uyeID })
+        </td>
+    </tr>
+}
+
+</table>

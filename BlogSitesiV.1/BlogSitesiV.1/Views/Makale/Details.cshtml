@@ -1,0 +1,74 @@
+﻿@model BlogSitesiV._1.Data.Model.Makale
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Makale</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.kategori.kategoriAd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kategori.kategoriAd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.makaleBaslik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.makaleBaslik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.makaleOzet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.makaleOzet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.makaleIcerik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.makaleIcerik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.makaleResim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.makaleResim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.makaleOkunma)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.makaleOkunma)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.makaleYorumSayisi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.makaleYorumSayisi)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.makaleID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
